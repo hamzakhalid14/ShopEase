@@ -92,4 +92,5 @@ public function show($id)
         return view('welcome', compact('products'));
     }
     
+    
 }

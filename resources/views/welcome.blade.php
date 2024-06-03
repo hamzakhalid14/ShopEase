@@ -23,6 +23,17 @@
         .nav-item {
             margin-right: 20px;
         }
+        .product-card img{
+        height: 200px;
+        object-fit:fill;
+        border-bottom: 1px solid #ccc;
+        
+    }
+    h2{
+        text-align: center;
+        align-items: center;
+        
+    }
     </style>
 </head>
 <body>
@@ -51,6 +62,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('register')}}">Inscription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('orders.index')}}">My Orders</a>
                     </li>
                 </ul>
             </div>

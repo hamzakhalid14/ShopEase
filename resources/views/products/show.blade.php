@@ -9,6 +9,19 @@
     <!-- Ajoutez le lien vers le CSS de Bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<style>
+            .product-card img{
+        height: 200px;
+        object-fit:fill;
+        border-bottom: 1px solid #ccc;
+        
+    }
+    h2{
+        text-align: center;
+        align-items: center;
+        
+    }
+</style>
 <body>
     <div class="container mt-5">
         <div class="card">
@@ -20,7 +33,7 @@
                 <p class="card-text"><strong>Quantity disponible:</strong> {{ $product->quantite }}</p>
                 <p class="card-text"><strong>Category:</strong> {{ $product->category->name }}</p>
                 <a href="{{ route('products.index') }}" class="btn btn-primary">Retour à la liste</a>
-                <a href="{{ route('products.index') }}" class="btn btn-success">Make a request</a>
+                <a href="{{ route('orders.create') }}" class="btn btn-success">Make a request</a>
                 <a href="{{ route('products.edit', $product->id) }}" class="btn btn-danger">Edit an item</a>
             </div>
         </div>

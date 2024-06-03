@@ -17,7 +17,7 @@ public function up()
         $table->text('shipping_address')->nullable();
         $table->timestamps();
 
-        $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
     });
 }
 

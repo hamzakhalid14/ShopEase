@@ -9,6 +9,17 @@
         .product-card {
             margin-bottom: 20px;
         }
+        .product-card img{
+        height: 200px;
+        object-fit:fill;
+        border-bottom: 1px solid #ccc;
+        
+    }
+    h2{
+        text-align: center;
+        align-items: center;
+        
+    }
     </style>
 </head>
 <body>

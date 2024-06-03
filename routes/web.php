@@ -30,7 +30,9 @@ Route::get('/categories/{category}', [CategoryController::class, 'show'])->name(
 Route::get('/', [ProductController::class, 'welcome']); 
 
 
+
 Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');
 Route::post('/products', [ProductController::class, 'store'])->name('products.store');
+Route::post('/products/request', [ProductController::class, 'requestProduct'])->name('products.request');
 
 require __DIR__.'/auth.php';

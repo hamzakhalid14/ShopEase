@@ -14,4 +14,7 @@
             </div>
         </div>
     </div>
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('products.index')}}">Produits</a>
+    </li>
 </x-app-layout>
